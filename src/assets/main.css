@@ -1,0 +1,73 @@
+/*==================================
+  1. CSS Reset (Tarayıcı Varsayılanlarını Sıfırla)
+==================================*/
+* {
+    /* Tüm elementler için kenar boşluğunu (padding, border) genişliğe dahil et */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/*==================================
+  2. Temel Tipografi ve Renkler
+==================================*/
+:root {
+    /* Nike'ın tipik renk paleti */
+    --color-primary: #000000;      /* Siyah (Yazılar, Butonlar) */
+    --color-secondary: #ffffff;    /* Beyaz (Arka Plan) */
+    --color-accent: #f6f6f6;       /* Açık Gri (Input Arka Planları, Kartlar) */
+    --color-text-light: #555555;   /* Gri (İkincil Yazılar) */
+    
+    /* Global font ayarı (Varsayılan sisteme yakın, temiz bir font) */
+    --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+}
+
+body {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-family: var(--font-family-base);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/*==================================
+  3. Link ve Buton Varsayılanları
+==================================*/
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--color-text-light);
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+/* Giriş formu ve Input'lar için genel stil */
+input, select, textarea {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Form üzerindeki genel hata mesajı stili */
+.alert-error {
+    background-color: #C00; /* Kırmızı */
+    color: var(--color-secondary);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-weight: var(--font-weight-medium);
+    text-align: center;
+}
