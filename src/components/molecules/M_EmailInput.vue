@@ -44,7 +44,6 @@ export default {
       default: true,
     },
   },
-  // KRİTİK: v-model'i güncellemek için bu event tetiklenmeli
   emits: ['update:modelValue'],
 };
 </script>
