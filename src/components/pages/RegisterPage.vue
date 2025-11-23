@@ -111,11 +111,11 @@ export default {
                 return;
             }
 
-            // Pinia store ile kayıt denemesi
+            
             const success = await authStore.registerUser(form);
 
             if (success) {
-                router.push({ name: 'home' }); // Başarılıysa ana sayfaya yönlendir
+                router.push({ name: 'home' }); 
             }
         };
 
@@ -131,7 +131,7 @@ export default {
 </script>
 
 <style scoped>
-/* GENEL DÜZEN */
+
 .register-page-container {
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ export default {
 
 .register-form-wrapper {
     width: 100%;
-    max-width: 450px; /* Görseldeki gibi dar form alanı */
+    max-width: 450px; 
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -154,11 +154,11 @@ export default {
 }
 
 .nike-logo {
-    /* Nike logosunun CSS veya SVG ile ekleneceği yer */
+
     display: inline-block;
     width: 50px;
     height: 18px;
-    background: url('/images/nike_logo.png') no-repeat center center; /* public/images/nike_logo.png dosyasını gerektirir */
+    background: url('/images/nike_logo.png') no-repeat center center; 
     background-size: contain;
 }
 
@@ -179,7 +179,7 @@ export default {
     font-size: 14px;
 }
 
-/* INPUT STİLLERİ */
+
 .registration-form input:not([type="checkbox"]),
 .registration-form select {
     width: 100%;
@@ -300,7 +300,7 @@ export default {
     font-weight: 600;
 }
 
-/* Hesap Oluştur Butonu */
+
 .create-account-btn {
     width: 100%;
     background-color: black;
@@ -324,7 +324,7 @@ export default {
     cursor: not-allowed;
 }
 
-/* Mobil Uyumlu Düzenleme */
+
 @media (max-width: 600px) {
     .register-page-container {
         padding: 20px 10px;
