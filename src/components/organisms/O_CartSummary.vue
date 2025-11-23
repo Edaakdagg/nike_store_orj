@@ -38,7 +38,7 @@ export default {
     A_Button,
   },
   props: {
-    // Sepet toplamlarını prop olarak alıyoruz (mock data için)
+    
     cartTotal: {
         type: Object,
         default: () => ({
@@ -54,11 +54,11 @@ export default {
     },
     goToCheckout() {
       console.log('Ödeme sayfasına yönlendiriliyor...');
-      // Gerçekte: this.$router.push('/checkout');
+     
     },
     continueShopping() {
       console.log('Alışverişe devam ediliyor...');
-      // Gerçekte: this.$router.push('/');
+     
     }
   }
 };
