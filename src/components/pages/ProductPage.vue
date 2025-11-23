@@ -16,7 +16,7 @@
 import O_Header from '../organisms/O_Header.vue';
 import O_Footer from '../organisms/O_Footer.vue';
 import O_ProductGrid from '../organisms/O_ProductGrid.vue';
-import O_ProductDetails from '../organisms/O_ProductDetails.vue'; // Yeni eklenen
+import O_ProductDetails from '../organisms/O_ProductDetails.vue'; 
 
 export default {
   name: 'ProductPage',
@@ -24,7 +24,7 @@ export default {
     O_Header,
     O_Footer,
     O_ProductGrid,
-    O_ProductDetails, // Yeni eklenen
+    O_ProductDetails, 
   },
 };
 </script>
