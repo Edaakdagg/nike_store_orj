@@ -55,7 +55,7 @@ export default {
    
     grid-template-columns: repeat(3, 1fr); 
     
-    gap: 30px; /* Kartlar arasındaki boşluk */
+    gap: 30px; 
     padding: 0 0 40px 0; 
 }
 
