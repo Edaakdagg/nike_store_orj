@@ -79,13 +79,10 @@ export default {
 </script>
 
 <style scoped>
-/*
-   Nike orijinal görünümüne yakın beyaz arka plan, koyu metin renkleri ve 
-   en alt satırdaki linklerin yan yana durmasını sağlayan CSS düzenlemeleri yapıldı.
-*/
+
 
 .main-footer {
-  /* Arka planı beyaza çevir */
+
   background-color: var(--color-white, #ffffff); 
   color: var(--color-black, #333); 
   padding: 40px 20px 20px 20px;
@@ -131,14 +128,14 @@ export default {
 }
 
 .column ul li a {
-  /* Link metinleri koyu gri */
+ 
   color: #555; 
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .column ul li a:hover {
-  /* Hover siyah */
+ 
   color: black;
 }
 
@@ -166,7 +163,7 @@ export default {
 }
 
 .copyright-info {
-    /* Telif ve Klavuzlar yan yana durması için */
+   
     display: flex;
     align-items: center;
     gap: 15px; 
@@ -175,7 +172,7 @@ export default {
 .copyright {
   color: #777; 
   font-size: 12px;
-  /* Alt alta inmeyi engeller */
+ 
   white-space: nowrap; 
 }
 
@@ -198,16 +195,15 @@ export default {
   color: black;
 }
 
-/* Küçük ekranlar için responsive ayarlar */
+
 @media (max-width: 900px) {
-    /* Orta ve küçük ekranlarda alt alta listeleme */
+  
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
     }
     
     .copyright-info {
-        /* Mobil görünümde telif ve klavuzları alt alta indirebiliriz */
         flex-direction: column; 
         align-items: flex-start;
         gap: 5px;
@@ -215,7 +211,6 @@ export default {
     }
 
     .bottom-links {
-        /* Linkleri dikey listeleriz */
         flex-direction: column;
         gap: 10px;
         flex-wrap: wrap; 
