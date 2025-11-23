@@ -32,7 +32,7 @@
 
 <script>
 import { useAuthStore } from '@/stores/AuthStore';
-import { useRouter } from 'vue-router'; // Vue Router'ı kullanıma almak için
+import { useRouter } from 'vue-router'; 
 import A_Button from '../atoms/A_Button.vue';
 import M_EmailInput from '../molecules/M_EmailInput.vue';
 import M_PasswordInput from '../molecules/M_PasswordInput.vue';
@@ -58,7 +58,7 @@ export default {
   
     const router = useRouter(); 
     
-    // Hem store'u hem de router'ı return et
+   
     return { auth, router };
   },
   methods: {
@@ -66,12 +66,12 @@ export default {
      
       this.auth.authError = null;
 
-      // E-posta doğrulama
+      
       this.emailError = this.email.includes('@') && this.email.length > 5 
                         ? '' 
                         : 'Lütfen geçerli bir e-posta adresi girin.';
       
-      // Şifre doğrulama
+
       this.passwordError = this.password.length >= 6 
                            ? '' 
                            : 'Şifre en az 6 karakter olmalıdır.';
@@ -108,8 +108,8 @@ export default {
     align-items: center;
     padding: 40px 20px;
     max-width: 400px;
-    margin: 50px auto 100px auto; /* Sayfayı ortala */
-    background-color: var(--color-secondary); /* Beyaz form arka planı */
+    margin: 50px auto 100px auto;
+    background-color: var(--color-secondary); 
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -168,7 +168,7 @@ label {
     cursor: not-allowed;
 }
 
-/* Kayıt Linki Alanı */
+
 .register-area {
     margin-top: 20px;
     font-size: 14px;
