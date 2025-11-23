@@ -30,11 +30,11 @@ export default {
 .search-module {
   display: flex;
   align-items: center;
-  background-color: #f5f5f5; /* Açık gri arka plan  */
+  background-color: #f5f5f5; 
   border-radius: 20px;
   padding: 0 15px;
   height: 40px;
-  width: 180px; /* Sabit genişlik  */
+  width: 180px;
 }
 
 .search-icon {
