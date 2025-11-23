@@ -152,12 +152,12 @@ const handleRegister = () => {
 .o-register-form-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Ortalamak için */
+  align-items: center; 
   padding: 40px 20px;
-  max-width: 450px; /* Nike'ın sayfasındaki form genişliğine yakın */
-  margin: 50px auto; /* Üstten ve alttan boşluk bırak */
+  max-width: 450px;
+  margin: 50px auto; 
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Hafif gölge */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
   border-radius: 8px;
 }
 
@@ -177,7 +177,7 @@ h1 {
 }
 
 .email-info .edit-email {
-  color: #007bff; /* Mavi link rengi */
+  color: #007bff; 
   text-decoration: underline;
 }
 
@@ -187,18 +187,18 @@ h1 {
 
 .form-group {
   margin-bottom: 20px;
-  position: relative; /* Şifre gözü için */
+  position: relative; 
 }
 
 .form-row {
   display: flex;
-  gap: 15px; /* Ad ve Soyadı arasında boşluk */
+  gap: 15px;
   margin-bottom: 20px;
 }
 
 .form-row .form-group {
-  flex: 1; /* Eşit genişlikte olmaları için */
-  margin-bottom: 0; /* İçteki form-group'ların kendi marginleri olmasın */
+  flex: 1;
+  margin-bottom: 0; 
 }
 
 .form-control {
@@ -217,7 +217,7 @@ h1 {
 }
 
 .form-control:focus {
-  border-color: #111; /* Odaklandığında siyah çerçeve */
+  border-color: #111; 
 }
 
 .sr-only {
@@ -232,7 +232,7 @@ h1 {
   border-width: 0;
 }
 
-/* Kod alanı ve timer */
+
 .code-timer {
   position: absolute;
   top: 50%;
@@ -240,10 +240,9 @@ h1 {
   transform: translateY(-50%);
   font-size: 13px;
   color: #888;
-  white-space: nowrap; /* Timer'ın alt satıra inmesini engeller */
+  white-space: nowrap;
 }
 
-/* Şifre Alanı */
 .password-input-wrapper {
   position: relative;
 }
@@ -270,39 +269,39 @@ h1 {
 }
 
 .password-rules li::before {
-  content: '✕'; /* Hata işareti */
-  color: #f00; /* Kırmızı */
+  content: '✕'; 
+  color: #f00;
   margin-right: 5px;
 }
 
 .password-rules li.valid::before {
-  content: '✓'; /* Geçerli işareti */
-  color: #0a0; /* Yeşil */
+  content: '✓'; 
+  color: #0a0; 
 }
 
-/* Select Alanı */
+
 .select-group {
   position: relative;
 }
 
 .select-group .form-control {
-  appearance: none; /* Varsayılan select okunu gizle */
-  padding-right: 35px; /* Özel ok için yer aç */
+  appearance: none;
+  padding-right: 35px; 
 }
 
 .select-arrow {
   position: absolute;
   right: 15px;
   top: 50%;
-  transform: translateY(-50%) rotate(45deg); /* Ok şekli */
+  transform: translateY(-50%) rotate(45deg);
   width: 8px;
   height: 8px;
   border-bottom: 2px solid #555;
   border-right: 2px solid #555;
-  pointer-events: none; /* Tıklamayı engelle */
+  pointer-events: none;
 }
 
-/* Doğum Tarihi Alanı */
+
 .date-of-birth-group {
   margin-bottom: 30px;
 }
@@ -320,8 +319,8 @@ h1 {
 }
 
 .dob-inputs .form-control {
-  flex: 1; /* Eşit genişlikte olmaları için */
-  text-align: center; /* Sayıların ortalanması */
+  flex: 1; 
+  text-align: center; 
 }
 
 .dob-info {
@@ -330,14 +329,14 @@ h1 {
   margin-top: 10px;
 }
 
-/* Checkbox Alanları */
+
 .checkbox-group {
   margin-bottom: 30px;
 }
 
 .checkbox-label {
   display: flex;
-  align-items: flex-start; /* Metin birden fazla satırsa üstten başla */
+  align-items: flex-start; 
   margin-bottom: 15px;
   cursor: pointer;
   font-size: 14px;
@@ -347,8 +346,8 @@ h1 {
 
 .checkbox-label input[type="checkbox"] {
   margin-right: 10px;
-  flex-shrink: 0; /* Checkbox'ın küçülmesini engelle */
-  width: 18px; /* Daha büyük checkbox */
+  flex-shrink: 0;
+  width: 18px;
   height: 18px;
   border: 1px solid #ccc;
   border-radius: 2px;
@@ -358,12 +357,12 @@ h1 {
 }
 
 .checkbox-label input[type="checkbox"]:checked {
-  background-color: #111; /* İşaretlendiğinde siyah */
+  background-color: #111;
   border-color: #111;
 }
 
 .checkbox-label input[type="checkbox"]:checked::after {
-  content: '✓'; /* Tik işareti */
+  content: '✓'; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -378,11 +377,11 @@ h1 {
   text-decoration: underline;
 }
 
-/* Buton */
+
 .btn-primary {
   width: 100%;
   padding: 14px;
-  background-color: #111; /* Siyah buton */
+  background-color: #111;
   color: white;
   border: none;
   border-radius: 4px;
@@ -393,6 +392,6 @@ h1 {
 }
 
 .btn-primary:hover {
-  background-color: #555; /* Hover'da koyu gri */
+  background-color: #555;
 }
 </style>
