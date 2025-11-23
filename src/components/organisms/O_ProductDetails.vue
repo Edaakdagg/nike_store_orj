@@ -175,7 +175,6 @@ export default {
 </script>
 
 <style scoped>
-/* Genel Düzen ve Konteynerler */
 .product-details-view {
     max-width: 1300px;
     margin: 40px auto;
@@ -187,13 +186,12 @@ export default {
     gap: 40px;
 }
 
-/* 1. GÖRSEL ALAN */
 .product-media-area {
     flex: 1; 
     max-width: 60%; 
     display: flex;
     flex-direction: row;
-    position: relative; /* Yüksek Puan için */
+    position: relative;
 }
 
 .high-rating-badge {
@@ -210,14 +208,14 @@ export default {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* 2. BİLGİ ALANI */
+
 .product-info-area {
     flex: 1; 
     max-width: 40%; 
     padding-top: 5px; 
 }
 
-/* Tipografi */
+
 .product-category {
     font-size: 16px;
     font-weight: 500;
@@ -238,7 +236,7 @@ export default {
     margin-bottom: 30px;
 }
 
-/* Beden Rehberi Kısmı */
+
 .size-guide-header {
     display: flex;
     justify-content: space-between;
@@ -264,12 +262,12 @@ export default {
 }
 
 
-/* Buton Grubu */
+
 .action-buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 30px; /* Beden seçiciden sonra boşluk */
+    margin-top: 30px; 
     margin-bottom: 20px;
 }
 
