@@ -10,7 +10,7 @@ export default {
   props: {
     variant: {
       type: String,
-      default: 'primary', // 'primary' (siyah), 'secondary' (beyaz/outline), 'icon' (sepet/favori)
+      default: 'primary', 
     },
   },
 };
@@ -28,7 +28,7 @@ export default {
 }
 
 .primary {
-  background-color: #111; /* Siyah */
+  background-color: #111; 
   color: white;
   border: none;
 }
