@@ -48,7 +48,7 @@
 
 <script>
 import { useCartStore } from '@/stores/CartStore';
-import O_CartSummary from '../organisms/O_CartSummary.vue'; // Özeti daha önce yapmıştık
+import O_CartSummary from '../organisms/O_CartSummary.vue'; 
 
 export default {
     name: 'CartPage',
@@ -88,9 +88,9 @@ export default {
     align-items: flex-start;
 }
 
-/* Ürün Listesi Stilleri */
+
 .cart-items-list {
-    flex: 2; /* Sepet listesi daha geniş */
+    flex: 2;
 }
 
 .cart-item {
@@ -126,7 +126,7 @@ export default {
     font-size: 18px;
 }
 
-/* ✨ YENİ STİL */
+
 .item-size {
     font-size: 14px;
     color: #666;
