@@ -20,7 +20,7 @@ import { ref } from 'vue';
 export default {
     name: 'M_SizeSelector',
     props: {
-        // Numara aralığı (O_ProductDetails'dan gelir)
+        
         availableSizes: {
             type: Array,
             default: () => ['40', '41', '42', '43', '44']
@@ -34,11 +34,11 @@ export default {
         const selectSize = (size) => {
             selectedSize.value = size;
             showWarning.value = false;
-            // Seçilen bedeni üst bileşene iletiyoruz
+        
             emit('sizeSelected', size);
         };
 
-        // Bu fonksiyon O_ProductDetails'daki "Sepete Ekle" butonu tarafından çağrılır.
+     
         const validate = () => {
              if (!selectedSize.value) {
                 showWarning.value = true;
@@ -62,15 +62,15 @@ export default {
     margin-bottom: 20px;
 }
 
-/* Beden kutucuklarını düzenleyen ızgara sistemi */
+
 .size-options {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Her satırda 3 düğme (tasarıma uygun) */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 8px; 
 }
 
 .size-btn {
-    padding: 15px 0; /* Daha kalın bir görünüm */
+    padding: 15px 0; 
     border: 1px solid #ccc;
     background-color: white;
     cursor: pointer;
@@ -78,11 +78,10 @@ export default {
     font-size: 14px;
     font-weight: 500;
     transition: all 0.2s;
-    text-align: center;
-    line-height: 1; /* Metnin ortalanması için */
+    text-align: cent
 }
 
-/* Hover ve Seçim Stilleri */
+
 .size-btn:hover {
     border-color: black;
 }
@@ -100,7 +99,7 @@ export default {
     font-weight: 500;
 }
 
-/* Küçük ekranlarda daha fazla sütun olabilir (Örn: 4'e 1fr) */
+
 @media (min-width: 600px) {
     .size-options {
         grid-template-columns: repeat(4, 1fr); 
