@@ -56,19 +56,19 @@ export default {
 </script>
 
 <style scoped>
-/* Genel Header Stil */
+
 .main-header {
     background-color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
 }
 
-/* 1. ÜST İKON ÇUBUĞU */
+
 .top-icon-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* 💥 BURAYI DÜZELTİYORUZ: Soldan ve sağdan 20px boşluk veriyoruz */
-    padding: 5px 40px; /* Üst/Alt 5px, Sol/Sağ 40px */
+    
+    padding: 5px 40px; 
     background-color: #f5f5f5; 
     font-size: 13px;
     height: 35px;
@@ -85,10 +85,10 @@ export default {
     align-items: center;
 }
 .icon-image {
-    width: 32px; /* ✨ BURAYI DEĞİŞTİRİN: Daha büyük bir boyut için */
-    height: 32px; /* ✨ BURAYI DEĞİŞTİRİN: Daha büyük bir boyut için */
+    width: 32px;
+    height: 32px; 
     object-fit: contain;
-    opacity: 0.9; /* Opaklığı da biraz artıralım */
+    opacity: 0.9; 
     transition: opacity 0.2s;
 }
 .icon-image:hover {
@@ -110,7 +110,7 @@ export default {
     color: #ccc;
 }
 
-/* 2. ANA NAVİGASYON */
+
 .main-nav-bar {
     display: flex;
     justify-content: space-between;
@@ -147,7 +147,7 @@ export default {
     position: relative;
 }
 
-/* Alt Çizgi Hover Efekti */
+
 .main-menu a:hover::after {
     content: '';
     position: absolute;
@@ -158,7 +158,7 @@ export default {
     background-color: black;
 }
 
-/* Sağ Araçlar */
+
 .nav-tools {
     display: flex;
     align-items: center;
